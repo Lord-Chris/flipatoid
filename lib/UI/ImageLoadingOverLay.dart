@@ -67,9 +67,8 @@ class _ImageLoadingOverLayState extends State<ImageLoadingOverLay> with SingleTi
       color: Colors.black87,
       child: new Center(
         child: _isLoading==true ? new Center(child: Text('Loading...',style: TextStyle(color: Colors.white, fontSize: _animation.value),),) : _hasLoaded==true ? new ImageLoaded((){
-          Navigator.pushNamedAndRemoveUntil(context, '/flip', (Route<dynamic> route)=>false,arguments: {
-            'image': picture,
-          });
+          Navigator.pushNamedAndRemoveUntil(context, '/flip', (Route<dynamic> route)=>false,arguments: picture,
+          );
         }): new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../Utils/FlipEffect.dart';
 import 'dart:math';
 
 

@@ -16,6 +16,7 @@ class ImageLoaded extends StatelessWidget{
           padding: EdgeInsets.only(top: 100.0),
         ),
         RaisedButton(
+          shape: RoundedRectangleBorder(),
           color: Colors.yellowAccent,
           padding: EdgeInsets.all(20.0),
           child: Text('Display Image',style: TextStyle(fontSize: 15.0,fontWeight: FontWeight.bold),),
